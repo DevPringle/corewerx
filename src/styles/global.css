@@ -222,6 +222,33 @@ article {
     margin-bottom: 60px;
 }
 
+/* Blog listing styles */
+.blog-list {
+    margin-top: 30px;
+}
+
+.blog-list .post {
+    border-top: 1px solid var(--border);
+    padding: 14px 0 18px;
+}
+
+.blog-list .post h2 {
+    margin: 0 0 6px;
+    font-size: 22px;
+}
+
+.blog-list .post .meta {
+    margin: 0 0 6px;
+    color: var(--muted);
+    font-size: 14px;
+}
+
+.blog-list .post .excerpt {
+    margin: 0;
+    color: var(--muted);
+}
+
+
 
 article h2 a {
     color: var(--text);

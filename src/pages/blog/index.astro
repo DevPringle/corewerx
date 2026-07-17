@@ -16,27 +16,28 @@ Development notes, theories, and processes behind CoreWerx.
 </p>
 
 
-{posts.map((post) => (
 
-<article>
+<div class="blog-list">
+	{posts.map((post) => (
+		<article class="post">
 
-<h2>
-<a href={`/blog/${post.id}`}>
-{post.data.title}
-</a>
-</h2>
+			<h2>
+				<a href={`/blog/${post.id}`}>
+					{post.data.title}
+				</a>
+			</h2>
 
-<p class="meta">
-{post.data.date}
-</p>
+			<p class="meta">
+				{post.data.date}
+			</p>
 
-<p>
-{post.data.description}
-</p>
+			<p class="excerpt">
+				{post.data.description}
+			</p>
 
-</article>
-
-))}
+		</article>
+	))}
+</div>
 
 
 </MainLayout>
