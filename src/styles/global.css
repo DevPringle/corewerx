@@ -39,16 +39,17 @@ body {
     font-size: 22px;
     font-weight: 700;
     line-height: 1;
-    height: 1.8rem;
+    height: 1.85rem;
+    padding-top: 0.02rem;
 }
 
 .logo-mark {
     display: block;
-    width: 1.925rem;
-    height: 1.925rem;
+    width: 1.9rem;
+    height: 1.9rem;
     object-fit: contain;
     flex-shrink: 0;
-    transform: translateY(0);
+    transform: translateY(0.02rem);
 }
 
 
