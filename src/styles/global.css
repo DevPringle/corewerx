@@ -6,7 +6,9 @@
     --code-bg: #f6f6f6;
     --background: #ffffff;
     --brand-font: "Monument Extended", "Inter", Arial, Helvetica, sans-serif;
-    --corewerx-text-offset: 0.08rem;
+    --corewerx-text-offset: 0.13rem;
+    --corewerx-font-size: 1.75rem;
+    --corewerx-icon-size: 1.9rem;
 }
 
 
@@ -37,18 +39,22 @@ body {
     color: var(--text);
     text-decoration: none;
     font-family: var(--brand-font);
-    font-size: 22px;
+    font-size: var(--corewerx-font-size);
     font-weight: 700;
     line-height: 1;
     height: 2rem;
     position: relative;
-    top: var(--corewerx-text-offset);
+}
+
+.logo span {
+    display: inline-block;
+    transform: translateY(var(--corewerx-text-offset));
 }
 
 .logo-mark {
     display: block;
-    width: 1.9rem;
-    height: 1.9rem;
+    width: var(--corewerx-icon-size);
+    height: var(--corewerx-icon-size);
     object-fit: contain;
     flex-shrink: 0;
     transform: translateY(0.01rem);
