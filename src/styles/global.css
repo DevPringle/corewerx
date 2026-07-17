@@ -32,19 +32,19 @@ body {
 .logo {
     display: inline-flex;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.4rem;
     color: var(--text);
     text-decoration: none;
     font-family: var(--brand-font);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 700;
     line-height: 1;
 }
 
 .logo-mark {
     display: block;
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.54rem;
+    height: 1.54rem;
     object-fit: contain;
     flex-shrink: 0;
     transform: translateY(-0.05rem);
