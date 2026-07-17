@@ -2,6 +2,7 @@
 title: "Why FPS Caps Still Matter"
 date: "July 16, 2026"
 description: "Looking at frame limits, fairness, and consistency."
+socialImage: "/images/fps-caps-social.png"
 ---
 
 FPS caps in FiveM racing servers were never implemented because higher frame rates looked worse or because players were expected to run weaker hardware. They existed because frame rate could influence vehicle behavior and create differences between drivers using different setups.
