@@ -39,8 +39,9 @@ body {
     font-size: 22px;
     font-weight: 700;
     line-height: 1;
-    height: 1.85rem;
-    padding-top: 0.02rem;
+    height: 2rem;
+    position: relative;
+    top: 0.08rem;
 }
 
 .logo-mark {
@@ -49,7 +50,7 @@ body {
     height: 1.9rem;
     object-fit: contain;
     flex-shrink: 0;
-    transform: translateY(0.02rem);
+    transform: translateY(0.01rem);
 }
 
 
