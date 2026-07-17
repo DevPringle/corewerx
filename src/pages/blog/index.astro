@@ -1,0 +1,42 @@
+---
+import MainLayout from "../../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("blog");
+---
+
+<MainLayout title="Blog">
+
+<h1>
+Blog
+</h1>
+
+<p>
+Development notes, theories, and processes behind CoreWerx.
+</p>
+
+
+{posts.map((post) => (
+
+<article>
+
+<h2>
+<a href={`/blog/${post.id}`}>
+{post.data.title}
+</a>
+</h2>
+
+<p class="meta">
+{post.data.date}
+</p>
+
+<p>
+{post.data.description}
+</p>
+
+</article>
+
+))}
+
+
+</MainLayout>

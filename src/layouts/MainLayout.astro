@@ -1,0 +1,37 @@
+---
+import "../styles/global.css";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.cdnfonts.com/css/monument-extended" rel="stylesheet" />
+  <title>{title ? `${title} · CoreWerx` : "CoreWerx"}</title>
+</head>
+
+<body>
+
+<main class="container">
+  <header>
+    <a href="/" class="logo">
+      <img src="/images/corewerx-icon.png" alt="CoreWerx icon" class="logo-mark" />
+      <span>CoreWerx</span>
+    </a>
+    <nav>
+      <a href="/blog">Blog</a>
+      <a href="/resources">Resources</a>
+    </nav>
+  </header>
+
+  <slot />
+
+</main>
+
+</body>
+</html>

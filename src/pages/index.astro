@@ -1,17 +1,42 @@
 ---
+import MainLayout from "../layouts/MainLayout.astro";
+import { getCollection } from "astro:content";
 
+const latestPosts = (await getCollection("blog")).slice(0, 2);
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Home">
+
+<h1>
+FiveM resources built with purpose.
+</h1>
+
+<p>
+CoreWerx creates scripts, assets, and tools for FiveM communities while documenting the ideas and processes behind them.
+</p>
+
+
+<h2>
+Latest from the blog
+</h2>
+
+<p>
+  Read the latest posts and explore the full archive.
+</p>
+
+<ul>
+  {latestPosts.map((post) => (
+    <li>
+      <a href={`/blog/${post.id}`}>
+        {post.data.title}
+      </a>
+    </li>
+  ))}
+</ul>
+
+<p>
+  <a href="/blog">Visit the blog →</a>
+</p>
+
+
+</MainLayout>
