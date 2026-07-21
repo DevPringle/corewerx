@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CoreWerx logo">
-  <rect width="64" height="64" rx="14" fill="none" />
-  <path d="M18 14h13a10 10 0 1 1 0 20H24v8h-6V14Zm6 6v8h7a4 4 0 0 0 0-8h-7Z" fill="#2563eb" />
-  <rect x="38" y="14" width="8" height="32" rx="2" fill="#0f172a" />
-</svg>
