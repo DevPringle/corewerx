@@ -15,7 +15,11 @@ const pageTheme = pathname === "/"
     : pathname.startsWith("/resources")
       ? "resources"
       : "default";
-const faviconHref = "/favicon.png";
+const faviconHref = pageTheme === "blog"
+  ? "/favicon-blog.png"
+  : pageTheme === "resources"
+    ? "/favicon-resources.png"
+    : "/favicon-home.png";
 ---
 
 <html lang="en">
