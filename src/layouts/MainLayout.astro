@@ -7,6 +7,14 @@ const shareImage = socialImage ?? "/images/site-social.png";
 const absoluteShareImage = shareImage.startsWith("http") ? shareImage : `${siteOrigin}${shareImage}`;
 const pageTitle = title ? `${title} · CoreWerx` : "CoreWerx";
 const pageDescription = description ?? "CoreWerx creates scripts, assets, and tools for FiveM communities while documenting the ideas and processes behind them.";
+const pathname = Astro.url.pathname;
+const pageTheme = pathname === "/"
+  ? "home"
+  : pathname.startsWith("/blog")
+    ? "blog"
+    : pathname.startsWith("/resources")
+      ? "resources"
+      : "default";
 ---
 
 <html lang="en">
@@ -36,7 +44,7 @@ const pageDescription = description ?? "CoreWerx creates scripts, assets, and to
   <title>{pageTitle}</title>
 </head>
 
-<body>
+<body class={`page-${pageTheme}`}>
 
 <main class="container">
   <header>
