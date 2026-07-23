@@ -1,2 +1,1 @@
-# Placeholder AdSense entry. Replace this line with the exact text provided by Google AdSense if needed.
 google.com, pub-1387352062358079, DIRECT, f08c47fec0942fa0
